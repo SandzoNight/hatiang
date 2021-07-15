@@ -18,8 +18,8 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <div className='sm:invisible'>
-          ปัดซ้าย-ขวาเพื่อดูข้อมูลเพิ่มเติม
+        <div className='sm:invisible text-center text-xs text-gray-600'>
+          &lt;&lt; ปัดซ้าย-ขวาเพื่อดูข้อมูลเพิ่มเติม &gt;&gt;
         </div>
         <div>
           <div className='table-container'>
