@@ -14,28 +14,30 @@ export default function Home() {
           ช่องทางหาเตียงผู้ป่วย Covid-19
         </h1>
         <div>
-          <table className='table is-fullwidth'>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>ช่องทางติดต่อ</th>
-                <th>หน่วยงาน</th>
-                <th>พื้นที่</th>
-              </tr>
-            </thead>
-            <tbody>
-              {contacts.map((contact, key) => (
+          <div className='table-container'>
+            <table className='table sm:w-full is-hoverable'>
+              <thead>
                 <tr>
-                  <td>{key + 1}</td>
-                  <td>
-                    <Contact contact={contact} />
-                  </td>
-                  <td>{contact.name}</td>
-                  <td>{`${contact.area ? `ภาค${contact.area}` : ''}`} {contact.province ? `- ${contact.province}` : ''}</td>
+                  <th>#</th>
+                  <th>ช่องทางติดต่อ</th>
+                  <th>หน่วยงาน</th>
+                  <th>พื้นที่</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {contacts.map((contact, key) => (
+                  <tr>
+                    <td>{key + 1}</td>
+                    <td>
+                      <Contact contact={contact} />
+                    </td>
+                    <td className='whitespace-nowrap'>{contact.name}</td>
+                    <td className='whitespace-nowrap'>{`${contact.area ? `ภาค${contact.area}` : ''}`} {contact.province ? `- ${contact.province}` : ''}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <div>
             <div className='text-center'>รวบรวมข้อมูลจาก</div>
             <div className='text-center text-xs'>อัปเดตเมื่อ {sources.updated_at}</div>
