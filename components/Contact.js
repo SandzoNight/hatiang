@@ -12,12 +12,12 @@ export default function Contact({ contact }) {
             ) : null}
             {contact.line ? (
                 <div>
-                    <FontAwesomeIcon style={{color: '#00c300'}} icon={faLine}></FontAwesomeIcon> <a href={`https://line.me/R/ti/p/${contact.line}`}>{contact.line}</a>
+                    <FontAwesomeIcon style={{color: '#00c300'}} icon={faLine}></FontAwesomeIcon> <a target='_blank' href={`https://line.me/R/ti/p/${contact.line}`}>{contact.line}</a>
                 </div>
             ) : null}
             {contact.facebook ? (
                 <div>
-                    <FontAwesomeIcon style={{color: '#1877f2'}} icon={faFacebook}></FontAwesomeIcon> <a href={contact.facebook}>facebook</a>
+                    <FontAwesomeIcon style={{color: '#1877f2'}} icon={faFacebook}></FontAwesomeIcon> <a target='_blank' href={contact.facebook}>facebook</a>
                 </div>
             ) : null}
         </div>
