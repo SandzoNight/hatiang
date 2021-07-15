@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import contacts from '../contact.json'
 import sources from '../sources.json'
 
@@ -29,16 +30,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-      <div className='text-center'>Open source on <a href='https://github.com/SandzoNight/hatiang' className='font-bold'>github</a></div>
-        <div className='text-center'>รวบรวมข้อมูลจาก</div>
-        <div className='text-center text-xs'>อัปเดตเมื่อ {sources.updated_at}</div>
-        <ul className='text-center'>
-          {sources.list.map(source => (
-            <li>{source}</li>
-          ))}
-        </ul>
-      </div>
+      <Footer />
     </>
   )
 }
