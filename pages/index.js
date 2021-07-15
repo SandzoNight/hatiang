@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Contact from '../components/Contact'
 import contacts from '../contact.json'
 import sources from '../sources.json'
@@ -9,20 +10,17 @@ export default function Home() {
       <Head>
         <title>ช่องทางหาเตียงผู้ป่วยโควิด-19</title>
       </Head>
-      <div className='container mx-auto mt-3 px-4'>
-        <h1 className='text-center text-4xl'>
+      <div className='container mx-auto my-3 px-4'>
+        <h1 className='text-left sm:text-center text-2xl sm:text-4xl'>
           ช่องทางหาเตียงผู้ป่วย Covid-19
         </h1>
-        <div className='text-right'>
-          <a className='button' href='https://forms.gle/w8ZWqvCvzxR8FUsH6' target='_blank'>+ เพิ่มข้อมูลช่องทางการติดต่อ</a>
+        <div className='text-right my-4'>
         </div>
         <div>
           <div className='table-container'>
             <table className='table sm:w-full is-hoverable'>
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>ช่องทางติดต่อ</th>
                   <th>หน่วยงาน</th>
                   <th>พื้นที่</th>
                 </tr>
@@ -30,17 +28,20 @@ export default function Home() {
               <tbody>
                 {contacts.map((contact, key) => (
                   <tr>
-                    <td>{key + 1}</td>
-                    <td>
+                    <td className='whitespace-nowrap'>
+                      <div>
+                        <div className='text-lg'>{contact.name}</div>
                       <Contact contact={contact} />
+                      </div>
                     </td>
-                    <td className='whitespace-nowrap'>{contact.name}</td>
                     <td className='whitespace-nowrap'>{`${contact.area ? `ภาค${contact.area}` : ''}`} {contact.province ? `- ${contact.province}` : ''}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
           <div>
             <div className='text-center'>Open source on <a href='https://github.com/SandzoNight/hatiang' className='font-bold'>github</a></div>
             <div className='text-center'>รวบรวมข้อมูลจาก</div>
@@ -51,8 +52,6 @@ export default function Home() {
               ))}
             </ul>
           </div>
-        </div>
-      </div>
     </>
   )
 }
