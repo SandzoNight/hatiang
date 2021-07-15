@@ -13,6 +13,9 @@ export default function Home() {
         <h1 className='text-center text-4xl'>
           ช่องทางหาเตียงผู้ป่วย Covid-19
         </h1>
+        <div className='text-right'>
+          <a className='button' href='https://forms.gle/w8ZWqvCvzxR8FUsH6' target='_blank'>+ เพิ่มข้อมูลช่องทางการติดต่อ</a>
+        </div>
         <div>
           <div className='table-container'>
             <table className='table sm:w-full is-hoverable'>
