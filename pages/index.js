@@ -19,6 +19,7 @@ export default function Home() {
                 <th>#</th>
                 <th>ช่องทางติดต่อ</th>
                 <th>หน่วยงาน</th>
+                <th>พื้นที่</th>
               </tr>
             </thead>
             <tbody>
@@ -29,6 +30,7 @@ export default function Home() {
                     โทร: <a href={`tel:${contact.tel}`}>{contact.tel}</a>
                   </td>
                   <td>{contact.name}</td>
+                  <td>{`${contact.area ? `ภาค${contact.area}` : ''}`} {contact.province ? `- ${contact.province}` : ''}</td>
                 </tr>
               ))}
             </tbody>
