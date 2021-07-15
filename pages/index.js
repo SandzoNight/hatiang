@@ -15,6 +15,11 @@ export default function Home() {
           ช่องทางหาเตียงผู้ป่วย Covid-19
         </h1>
         <div className='text-right my-4'>
+          <Link href='/add' target='_blank'>
+            <a className='button is-link'>
+              + เพิ่มข้อมูล
+            </a>
+          </Link>
         </div>
         <div>
           <div className='table-container'>
@@ -31,7 +36,7 @@ export default function Home() {
                     <td className='whitespace-nowrap'>
                       <div>
                         <div className='text-lg'>{contact.name}</div>
-                      <Contact contact={contact} />
+                        <Contact contact={contact} />
                       </div>
                     </td>
                     <td className='whitespace-nowrap'>{`${contact.area ? `ภาค${contact.area}` : ''}`} {contact.province ? `- ${contact.province}` : ''}</td>
@@ -42,16 +47,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-          <div>
-            <div className='text-center'>Open source on <a href='https://github.com/SandzoNight/hatiang' className='font-bold'>github</a></div>
-            <div className='text-center'>รวบรวมข้อมูลจาก</div>
-            <div className='text-center text-xs'>อัปเดตเมื่อ {sources.updated_at}</div>
-            <ul className='text-center'>
-              {sources.list.map(source => (
-                <li>{source}</li>
-              ))}
-            </ul>
-          </div>
+      <div>
+      <div className='text-center'>Open source on <a href='https://github.com/SandzoNight/hatiang' className='font-bold'>github</a></div>
+        <div className='text-center'>รวบรวมข้อมูลจาก</div>
+        <div className='text-center text-xs'>อัปเดตเมื่อ {sources.updated_at}</div>
+        <ul className='text-center'>
+          {sources.list.map(source => (
+            <li>{source}</li>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }
