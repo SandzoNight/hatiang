@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Contact from '../components/Contact'
 import contacts from '../contact.json'
 import sources from '../sources.json'
 
@@ -27,7 +28,7 @@ export default function Home() {
                 <tr>
                   <td>{key + 1}</td>
                   <td>
-                    โทร: <a href={`tel:${contact.tel}`}>{contact.tel}</a>
+                    <Contact contact={contact} />
                   </td>
                   <td>{contact.name}</td>
                   <td>{`${contact.area ? `ภาค${contact.area}` : ''}`} {contact.province ? `- ${contact.province}` : ''}</td>
