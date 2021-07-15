@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <meta name='keywords' content="หาเตียง, หาเตียงโควิด, เบอร์หาเตียง, เว็บหาเตียง, เว็บหาเตียงโควิด, หาเตียง โควิด"></meta>
       <meta name='description' content="รวบรวมช่องทางการติดต่อหาเตียงรักษาผู้ป่วยโควิด-19"></meta>
       <meta property='og:title' content='ช่องทางหาเตียงผู้ป่วยโควิด-19'/>
-      <meta property='og:image' content={`${process.env.APP_URL}/static/og.png`} />
+      <meta property='og:image' content={`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/static/og.png`} />
       <meta property='og:description' content='รวบรวมช่องทางการติดต่อหาเตียงรักษาผู้ป่วยโควิด-19' />
     </Head>
     <Component {...pageProps} />
