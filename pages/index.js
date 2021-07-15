@@ -25,7 +25,9 @@ export default function Home() {
               {contacts.map((contact, key) => (
                 <tr>
                   <td>{key + 1}</td>
-                  <td><a href={`tel:${contact.tel}`}>{contact.tel}</a></td>
+                  <td>
+                    โทร: <a href={`tel:${contact.tel}`}>{contact.tel}</a>
+                  </td>
                   <td>{contact.name}</td>
                 </tr>
               ))}
