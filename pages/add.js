@@ -7,9 +7,6 @@ import sources from '../sources.json'
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>ช่องทางหาเตียงผู้ป่วยโควิด-19</title>
-      </Head>
       <div className='container mx-auto my-3 px-4'>
         <div>
           <Link href='/'>
