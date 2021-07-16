@@ -7,17 +7,23 @@ export default function Contact({ contact }) {
         <div>
             {contact.tel ? (
                 <div>
-                    <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> <a href={`tel:${contact.tel}`}>{contact.tel}</a>
+                    <a href={`tel:${contact.tel}`}>
+                        <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> {contact.tel}
+                    </a>
                 </div>
             ) : null}
             {contact.line ? (
                 <div>
-                    <FontAwesomeIcon style={{color: '#00c300'}} icon={faLine}></FontAwesomeIcon> <a target='_blank' href={`https://line.me/R/ti/p/${contact.line}`}>{contact.line}</a>
+                    <a target='_blank' href={`https://line.me/R/ti/p/${contact.line}`}>
+                        <FontAwesomeIcon style={{ color: '#00c300' }} icon={faLine}></FontAwesomeIcon> {contact.line}
+                    </a>
                 </div>
             ) : null}
             {contact.facebook ? (
                 <div>
-                    <FontAwesomeIcon style={{color: '#1877f2'}} icon={faFacebook}></FontAwesomeIcon> <a target='_blank' href={contact.facebook}>facebook</a>
+                    <a target='_blank' href={contact.facebook}>
+                        <FontAwesomeIcon style={{ color: '#1877f2' }} icon={faFacebook}></FontAwesomeIcon> facebook
+                    </a>
                 </div>
             ) : null}
         </div>
