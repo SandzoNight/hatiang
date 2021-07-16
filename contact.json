@@ -1,5 +1,30 @@
 [
     {
+        "name": "กรมควบคุมโรค",
+        "tel": "1422"
+    },
+    {
+        "name": "ประกันสังคม",
+        "tel": "1506"
+    },
+    {
+        "area": "กลาง",
+        "province": "นนทบุรี",
+        "name": "สำนักงานสาธารณสุขจังหวัดนนทบุรี",
+        "tel": "0613945402"
+    },
+    {
+        "area": "กลาง",
+        "province": "ปทุมธานี",
+        "name": "สายด่วนชาวปทุมฯ",
+        "tel": "025815658"
+    },
+    {
+        "province": "สมุทรปราการ",
+        "name": "สำนักงานสาธารณสุขจังหวัดสมุทรปราการ",
+        "tel": "0631929272"
+    },
+    {
         "name": "สำนักงานหลักประกันสุขภาพ",
         "tel": "1330"
     },
@@ -17,19 +42,19 @@
         "line": "@sabaideebot"
     },
     {
-        "name": "หมอแล็บแพนด้า",
+        "name": "เพจ หมดแล็บแพนด้า",
         "facebook": "https://www.facebook.com/MTlikesara"
     },
     {
-        "name": "Drama-addict",
+        "name": "เพจ Drama-addict",
         "facebook": "https://www.facebook.com/DramaAdd"
     },
     {
-        "name": "เราต้องรอด",
+        "name": "เพจ เราต้องรอด",
         "facebook": "https://www.facebook.com/savethailandsafe"
     },
     {
-        "name": "เส้นด้าย",
+        "name": "เพจ เส้นด้าย",
         "facebook": "https://www.facebook.com/zendai.org"
     },
     {
