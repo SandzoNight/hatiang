@@ -23,7 +23,7 @@ export default function Home() {
           <div className='table-container'>
             <iframe
               className='w-full'
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe4PygwlxkXJHjvv3JXX5lxqIUuE1AlbeHRxyELAyTNkA-8DQ/viewform?embedded=true" height="1508" frameborder="0" marginheight="0" marginwidth="0"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe4PygwlxkXJHjvv3JXX5lxqIUuE1AlbeHRxyELAyTNkA-8DQ/viewform?embedded=true" height="1508" frameBorder="0" marginHeight="0" marginWidth="0"
             >
               Loading…
             </iframe>
